@@ -53,396 +53,405 @@
 
 <body data-spy="scroll" data-target="#main-nav-collapse" data-offset="100">
 
-<div class="page-loader">
-    <div class="loader">Loading...</div>
-</div>
-<!-- Fixed Top Navigation -->
-<nav id="fixedTopNav" class="navbar navbar-fixed-top main-navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-    <div class="container">
-
-        <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="ion-drag"></span>
-            </button>
-
-            <!-- Logo -->
-            <div class="navbar-brand" itemscope itemtype="https://schema.org/Organization">
-                <span itemprop="name" class="sr-only">Supermarket Services</span>
-                <a itemprop="url" href="index.html">
-                    <img src="assets/images/custom/logo.png"> Supermarket Services
-                </a>
-            </div>
-            <!-- /Logo -->
-
-        </div><!-- /.navbar-header -->
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-            <ul class="nav navbar-nav navbar-right" role="menu">
-
-                <li class="dropdown">
-                    <li><a href="index.html">Home</a></li>
-                </li>
-
-                <li class="dropdown">
-                    <li><a href="aboutUs.html">About Us</a></li>
-                </li>
-
-                <li class="dropdown">
-                    <a href="productsPage.html">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="reachIns.html">Reach-Ins</a></li>
-                        <li><a href="walkIns.html">Walk-Ins</a></li>
-                        <li><a href="freezers.html">Freezers</a></li>
-                        <li><a href="anthony.html">Anthony Ardco Styleline Displayrite Glass Display Doors</a></li>
-                        <li><a href="drinkDispensers.html">Drink Dispensers</a></li>
-                        <li><a href="beerCaves.html">Beer Caves</a></li>
-                        <li><a href="cabinetry.html">Cabinetry</a></li>
-                        <li><a href="boothSeating.html">Booth Seating</a></li>
-                        <li><a href="cookingEquipment.html">Cooling Equipment</a></li>
-                        <li><a href="gondolaShelving.html">Gondola Shelving</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                </li>
-                <li class="dropdown">
-                    <li><a href="#">Request Quote</a></li>
-                </li>
-            </ul>
-        </div>
-        <!-- /Navigation Links -->
-
-    </div><!-- /.container -->
-</nav>
-<!-- /Fixed Top Navigation -->
-<header id="header" class="home-parallax home-fade dark-bg header-inner">
-    <div class="color-overlay"></div>
-    <div class="container">
-        <h1>Request Quote</h1>
-        <div class="breadcrumb">
-            <a href="index.html">Home</a> <i class="fa fa-angle-double-right"></i> <a href="#">Request Quote</a>
-
-        </div>
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
     </div>
-</header>
-<!-- Contact-us -->
-<section id="contact" class="section contact contact-full-width">
-    <div class="container">
-        <!---->
+    <!-- Fixed Top Navigation -->
+    <nav id="fixedTopNav" class="navbar navbar-fixed-top main-navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+        <div class="container">
 
-        <div class="section-content">
+            <div class="navbar-header">
 
-            <div class="row">
-                <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
-                    <h5>Feel free to drop us a line!</h5>
-                    <form action="php/contact-form.php" class="contact-form" id="contactForm" method="post" name="contactform" role="form">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="ion-drag"></span>
+                </button>
 
-                        <div class="form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="address" name="address" placeholder="Address" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="address2" name="address2" placeholder="Address 2" type="text">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="city" name="city" placeholder="City" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="state" name="state" placeholder="State/Province" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="zip" name="zip" placeholder="Zip/Postal Code" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="country" name="country" placeholder="Country" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email Address" type="email" required>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="emailV" name="emailV" placeholder="Verify Email Address" type="email" required>
-                        </div>
-                        <h5>I would like more information on:</h5>
-                        <section>
-                            <p>General Products</p>
-                            <div style="float:left">
-                                <div class="checkbox">
-                                    <label><input id="walkIns" name="walkIns" type="checkbox">Walk-Ins</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="coolerFreezerCombo" name="coolerFreezerCombo" type="checkbox">Cooler/Freezer Combos</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="refrigerationEquipment" name="refrigerationEquipment" type="checkbox">Refrigeration Equipment</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="iceMachines" name="iceMachines" type="checkbox">Ice Machines</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="drinkDispensers" name="drinkDispensers" type="checkbox">Drink Dispensers</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="commercialCabinets" name="commercialCabinets" type="checkbox">Commercial Cabinets</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="fountainMachines" name="fountainMachines" type="checkbox">Fountain Machines</label>
-                                </div>
-
-                            </div>
-
-                            <div style="float:right">
-                                <div class="checkbox">
-                                    <label><input id="reachIns" name="reachIns" type="checkbox">Reach-Ins</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="commercialFreezers" name="commercialFreezers" type="checkbox">Commercial Freezers</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="floralCoolers" name="floralCoolers" type="checkbox">Floral Coolers</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="displayDoors" name="displayDoors" type="checkbox">Display Doors</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="beerCaves" name="beerCaves" type="checkbox">Beer Caves</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="gondolaShelving" name="gondolaShelving" type="checkbox">Gondola Shelving</label>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <p>Commercial Cooking Equipment</p>
-                            <div style="float:left">
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                            </div>
-                            <div style="float:right">
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                                <div class="checkbox">
-                                    <label><input id="" name="" type="checkbox"></label>
-                                </div>
-                            </div>
-                        </section>
-
-                        <div id="contactFormResponse"></div>
-
-                        <button id="cfsubmit" type="submit" class="btn btn-dark btn-block contact-submit">Give us a shout</button>
-
-                    </form>
+                <!-- Logo -->
+                <div class="navbar-brand" itemscope itemtype="https://schema.org/Organization">
+                    <span itemprop="name" class="sr-only">Supermarket Services</span>
+                    <a itemprop="url" href="index.html">
+                        <img src="assets/images/custom/logo.png"> Supermarket Services
+                    </a>
                 </div>
-            </div>
+                <!-- /Logo -->
 
-            <div class="row">
-                <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
-                    <div class="row contact-info-wrap">
-                        <div class="col-sm-6">
-                            <div>
-                                <h5>Office Address</h5>
-                                <address class="contact-info">
-                                    <span>590 Castro St</span><br>
-                                    <span>Mountain View</span>,
-                                    <span>CA </span> -
-                                    <span>94041</span><br>
-                                    <span>United States</span>
-                                </address>
-                            </div>
+            </div><!-- /.navbar-header -->
 
-                        </div>
-                        <div class="col-sm-6">
-                            <div>
-                                <h5>Contact Information</h5>
-                                <div class="contact-info">
-                                    Toll-Free: (800)711-8982<br>
-                                    Mobile: ( 33 1) 42 68 53 01<br>
-                                    info@themewagon.com
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="main-nav-collapse">
+                <ul class="nav navbar-nav navbar-right" role="menu">
 
-    <div class="google-map">
-        <div id="map"></div>
-    </div>
+                    <li class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                    </li>
 
-</section>
-<!-- Contact-us -->
-<!-- Footer widgets -->
-<section id="footer-widgets" class="section footer-widgets dark-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="content-wrap widget-text">
-                    <h4>About the reign</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil. Fugiat ipsum officia reprehenderit rerum saepe. Assumenda distinctio, voluptatibus. At consectetur cumque enim error laudantium mollitia obcaecati!</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-wrap widget-contact">
-                    <h4>Contact info</h4>
-                    <ul>
-                        <li>
-                            <i class="ion-home"></i> 13005 Greenville California.
-                        </li>
-                        <li>
-                            <i class="ion-android-call"></i> (303) 674-7750
-                        </li>
-                        <li>
-                            <i class="ion-email"></i> info@yoursite.com
-                        </li>
-                        <li>
-                            <i class="ion-ios-location"></i> Map and Direction
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-wrap widget-recent-posts">
-                    <h4>Recent Posts</h4>
-                    <ul>
-                        <li>
-                            <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
-                            by <a href="#" class="author">Jhon Smith</a>
-                        </li>
-                        <li>
-                            <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
-                            by <a href="#" class="author">Jhon Smith</a>
-                        </li>
-                        <li>
-                            <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
-                            by <a href="#" class="author">Jhon Smith</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-wrap widget-gallery">
-                    <h4>Photo Gallery</h4>
-                    <div class="lightbox-gallery">
-                        <a href="assets/images/work/01.jpg">
-                            <img src="assets/images/work/01.jpg" alt=""/>
-                        </a>
-                        <a href="assets/images/work/02.jpg">
-                            <img src="assets/images/work/02.jpg" alt=""/>
-                        </a>
-                        <a href="assets/images/work/03.jpg">
-                            <img src="assets/images/work/03.jpg" alt=""/>
-                        </a>
-                        <a href="assets/images/work/04.jpg">
-                            <img src="assets/images/work/04.jpg" alt=""/>
-                        </a>
-                        <a href="assets/images/work/05.jpg">
-                            <img src="assets/images/work/05.jpg" alt=""/>
-                        </a>
-                        <a href="assets/images/work/06.jpg">
-                            <img src="assets/images/work/06.jpg" alt=""/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer widgets -->
-<!-- footer -->
-<footer id="footer" class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4">
-                <p class="copyright text-xs-center">&copy; 2015 Your company name</p>
-            </div>
+                    <li class="dropdown">
+                        <li><a href="aboutUs.html">About Us</a></li>
+                    </li>
 
-            <div class="col-md-5 col-sm-4">
-                <ul class="footer-social-block">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="dropdown">
+                        <a href="productsPage.html">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="reachIns.html">Reach-Ins</a></li>
+                            <li><a href="walkIns.html">Walk-Ins</a></li>
+                            <li><a href="freezers.html">Freezers</a></li>
+                            <li><a href="anthony.html">Anthony Ardco Styleline Displayrite Glass Display Doors</a></li>
+                            <li><a href="drinkDispensers.html">Drink Dispensers</a></li>
+                            <li><a href="beerCaves.html">Beer Caves</a></li>
+                            <li><a href="cabinetry.html">Cabinetry</a></li>
+                            <li><a href="boothSeating.html">Booth Seating</a></li>
+                            <li><a href="cookingEquipment.html">Cooling Equipment</a></li>
+                            <li><a href="gondolaShelving.html">Gondola Shelving</a></li>
+                        </ul>
+                    </li>
 
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-
-                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-
+                    <li class="dropdown">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </li>
+                    <li class="dropdown">
+                        <li><a href="#">Request Quote</a></li>
+                    </li>
                 </ul>
             </div>
+            <!-- /Navigation Links -->
 
-            <div class="col-md-4 col-sm-4">
-                <div class="footer-menu text-xs-center">
-                    <a href="#">Privacy Policy</a> | <a href="">Terms &amp; Conditions</a>
+        </div><!-- /.container -->
+    </nav>
+    <!-- /Fixed Top Navigation -->
+    <header id="header" class="home-parallax home-fade dark-bg header-inner">
+        <div class="color-overlay"></div>
+        <div class="container">
+            <h1>Request Quote</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fa fa-angle-double-right"></i> <a href="#">Request Quote</a>
+
+            </div>
+        </div>
+    </header>
+    <!-- Contact-us -->
+    <section id="contact" class="section contact contact-full-width">
+        <div class="container">
+            <!---->
+
+            <div class="section-content">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+                        <h5>What would you like to know about?</h5>
+                        <form action="php/contact-form.php" class="contact-form" id="contactForm" method="post" name="contactform" role="form">
+
+                            <div class="form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="company" name="company" placeholder="Company" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="address" name="address" placeholder="Address" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="address2" name="address2" placeholder="Address 2" type="text">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="city" name="city" placeholder="City" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="state" name="state" placeholder="State/Province" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="zip" name="zip" placeholder="Zip/Postal Code" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="country" name="country" placeholder="Country" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email Address" type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="emailV" name="emailV" placeholder="Verify Email Address" type="email" required>
+                            </div>
+                            <h5>I would like more information on:</h5>
+                            <table id="checkboxesTable">
+                                <tr>
+                                    <td class="checkboxTableEntry">General Products</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxTableEntry">
+                                        <div class="checkbox">
+                                            <label><input id="walkIns" name="walkIns" type="checkbox">Walk-Ins</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="coolerFreezerCombo" name="coolerFreezerCombo" type="checkbox">Cooler/Freezer Combos</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="refrigerationEquipment" name="refrigerationEquipment" type="checkbox">Refrigeration Equipment</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="iceMachines" name="iceMachines" type="checkbox">Ice Machines</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="drinkDispensers" name="drinkDispensers" type="checkbox">Drink Dispensers</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="commercialCabinets" name="commercialCabinets" type="checkbox">Commercial Cabinets</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="fountainMachines" name="fountainMachines" type="checkbox">Fountain Machines</label>
+                                        </div>
+
+                                    </td>
+
+                                    <td class="checkboxTableEntry">
+                                        <div class="checkbox">
+                                            <label><input id="reachIns" name="reachIns" type="checkbox">Reach-Ins</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="commercialFreezers" name="commercialFreezers" type="checkbox">Commercial Freezers</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="floralCoolers" name="floralCoolers" type="checkbox">Floral Coolers</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="displayDoors" name="displayDoors" type="checkbox">Display Doors</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="beerCaves" name="beerCaves" type="checkbox">Beer Caves</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="gondolaShelving" name="gondolaShelving" type="checkbox">Gondola Shelving</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxTableEntry">Commercial Cooking Equipment</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxTableEntry">
+                                        <div class="checkbox">
+                                            <label><input id="ClamshellsAndAddOnHoods" name="ClamshellsAndAddOnHoods" type="checkbox">Clamshells and Add-On Hoods</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="convectionOvens" name="convectionOvens" type="checkbox">Convection Ovens</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="deckOvens" name="deckOvens" type="checkbox">Deck Ovens </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="broilersStandardFeatures" name="broilersStandardFeatures" type="checkbox">Broilers Standard Features</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="griddles" name="griddles" type="checkbox">Griddles</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="proofersAndHoldingCabinets" name="proofersAndHoldingCabinets" type="checkbox">Proofers and Holding Cabinets</label>
+                                        </div>
+                                    </td>
+                                    <td class="checkboxTableEntry">
+                                        <div class="checkbox">
+                                            <label><input id="paneBella" name="paneBella" type="checkbox">Pane Bella</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="ranges" name="ranges" type="checkbox">Ranges</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="salamandersStandardFeatures" name="salamandersStandardFeatures" type="checkbox">Salamanders Standard Features</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="fryers" name="fryers" type="checkbox">Fryers</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="meltersAndFinishingOvens" name="meltersAndFinishingOvens" type="checkbox">Melters and Finishing Ovens</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input id="boothSeating" name="boothSeating" type="checkbox">Booth Seating</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="form-group">
+                                <input class="form-control" id="other" name="other" placeholder="Other" type="text">
+                            </div>
+                            <div id="contactFormResponse"></div>
+
+                            <button id="cfsubmit" type="submit" class="btn btn-dark btn-block contact-submit">Get a Quote</button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+                        <div class="row contact-info-wrap">
+                            <div class="col-sm-6">
+                                <div>
+                                    <h5>Office Address</h5>
+                                    <address class="contact-info">
+                                        <span>590 Castro St</span><br>
+                                        <span>Mountain View</span>,
+                                        <span>CA </span> -
+                                        <span>94041</span><br>
+                                        <span>United States</span>
+                                    </address>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div>
+                                    <h5>Contact Information</h5>
+                                    <div class="contact-info">
+                                        Toll-Free: (800)711-8982<br>
+                                        Mobile: ( 33 1) 42 68 53 01<br>
+                                        info@themewagon.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- #footer -->
 
-<a id="totop" href="#totop"><i class="fa fa-angle-double-up"></i></a>
-<!-- js -->
-<script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/lib/isotope/dist/isotope.pkgd.min.js"></script>
-<script src="assets/lib/owlcarousel/owl-carousel/owl.carousel.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="assets/lib/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="assets/lib/waypoints/lib/shortcuts/inview.min.js"></script>
+        <div class="google-map">
+            <div id="map"></div>
+        </div>
 
-<script src="assets/lib/FlexSlider/jquery.flexslider.js"></script>
-<script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.js"></script>
-<script src="assets/lib/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js"></script>
-<script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    </section>
+    <!-- Contact-us -->
+    <!-- Footer widgets -->
+    <section id="footer-widgets" class="section footer-widgets dark-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="content-wrap widget-text">
+                        <h4>About the reign</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil. Fugiat ipsum officia reprehenderit rerum saepe. Assumenda distinctio, voluptatibus. At consectetur cumque enim error laudantium mollitia obcaecati!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="content-wrap widget-contact">
+                        <h4>Contact info</h4>
+                        <ul>
+                            <li>
+                                <i class="ion-home"></i> 13005 Greenville California.
+                            </li>
+                            <li>
+                                <i class="ion-android-call"></i> (303) 674-7750
+                            </li>
+                            <li>
+                                <i class="ion-email"></i> info@yoursite.com
+                            </li>
+                            <li>
+                                <i class="ion-ios-location"></i> Map and Direction
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="content-wrap widget-recent-posts">
+                        <h4>Recent Posts</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
+                                by <a href="#" class="author">Jhon Smith</a>
+                            </li>
+                            <li>
+                                <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
+                                by <a href="#" class="author">Jhon Smith</a>
+                            </li>
+                            <li>
+                                <a href="#" class="post-title">Lorem ipsum dolor sit amet</a>
+                                by <a href="#" class="author">Jhon Smith</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="content-wrap widget-gallery">
+                        <h4>Photo Gallery</h4>
+                        <div class="lightbox-gallery">
+                            <a href="assets/images/work/01.jpg">
+                                <img src="assets/images/work/01.jpg" alt=""/>
+                            </a>
+                            <a href="assets/images/work/02.jpg">
+                                <img src="assets/images/work/02.jpg" alt=""/>
+                            </a>
+                            <a href="assets/images/work/03.jpg">
+                                <img src="assets/images/work/03.jpg" alt=""/>
+                            </a>
+                            <a href="assets/images/work/04.jpg">
+                                <img src="assets/images/work/04.jpg" alt=""/>
+                            </a>
+                            <a href="assets/images/work/05.jpg">
+                                <img src="assets/images/work/05.jpg" alt=""/>
+                            </a>
+                            <a href="assets/images/work/06.jpg">
+                                <img src="assets/images/work/06.jpg" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer widgets -->
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <p class="copyright text-xs-center">&copy; 2015 Your company name</p>
+                </div>
 
-<script src="assets/js/main.js"></script>
+                <div class="col-md-5 col-sm-4">
+                    <ul class="footer-social-block">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 
-<!--[if lt IE 10]>
-<script>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-menu text-xs-center">
+                        <a href="#">Privacy Policy</a> | <a href="">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a id="totop" href="#totop"><i class="fa fa-angle-double-up"></i></a>
+    <!-- js -->
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="assets/lib/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/lib/waypoints/lib/shortcuts/inview.min.js"></script>
+
+    <script src="assets/lib/FlexSlider/jquery.flexslider.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.js"></script>
+    <script src="assets/lib/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <!--[if lt IE 10]>
+    <script>
     $('input, textarea').placeholder();
 </script>
 <![endif]-->

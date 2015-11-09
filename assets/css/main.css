@@ -2,6 +2,11 @@ html, body {
   position: relative;
   overflow-x: hidden; }
 
+.checkboxTableEntry{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /*-----------------------------------------
     Page Loader
 ------------------------------------------*/
