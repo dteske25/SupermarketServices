@@ -1447,7 +1447,7 @@ blockquote p {
     border-color: #FAFAFA; }
 
 .funfacts {
-  background: url(../images/backgrounds/bg-fun-fact.jpg) no-repeat center center;
+  background: url(../images/headers/4.png) no-repeat center center;
   background-size: cover; }
   .funfacts .counter-box {
     text-align: center; }
@@ -2329,3 +2329,9 @@ blockquote p {
     vertical-align: middle; }
     .four-o-four .four-o-four-inner h1 {
       font-weight: bold; }
+
+
+.custom-logo{
+    height: 75px;
+    width: 75px;
+}
