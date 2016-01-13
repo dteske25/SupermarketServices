@@ -4,18 +4,38 @@
 
 	// Check if name has been entered
 	if (!isset($_POST['name'])) {
-		$errors['name'] = 'Please enter your name';
+		$errors['name'] = 'Please enter your name.';
+	}
+
+	if (!isset($_POST['address'])) {
+		$errors['address'] = 'Please enter your address.';
+	}
+
+	if (!isset($_POST['city'])) {
+		$errors['city'] = 'Please enter your city.';
+	}
+
+	if (!isset($_POST['state'])) {
+		$errors['state'] = 'Please enter your state.';
+	}
+
+	if (!isset($_POST['zip'])) {
+		$errors['zip'] = 'Please enter your zip';
+	}
+
+	if (!isset($_POST['country'])) {
+		$errors['country'] = 'Please enter your country';
+	}
+
+	if (!isset($_POST['phone'])) {
+		$errors['phone'] = 'Please enter your phone';
 	}
 
 	// Check if email has been entered and is valid
 	if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		$errors['email'] = 'Please enter a valid email address';
+		$errors['email'] = 'Please enter a valid email address.';
 	}
 
-	//Check if message has been entered
-	if (!isset($_POST['massage'])) {
-		$errors['message'] = 'Please enter your message';
-	}
 
 	$errorOutput = '';
 
@@ -41,10 +61,11 @@
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$message = $_POST['massage'];
 	$from = $email;
 	$to = 'dteske25@gmail.com';  // please change this email id
 	$subject = 'Testing Contact Forms';
+
+	$message =
 
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
