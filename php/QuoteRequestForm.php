@@ -20,15 +20,15 @@
         }
 
         if (!isset($_POST['zip'])) {
-                $errors['zip'] = 'Please enter your zip';
+                $errors['zip'] = 'Please enter your zip.';
         }
 
         if (!isset($_POST['country'])) {
-                $errors['country'] = 'Please enter your country';
+                $errors['country'] = 'Please enter your country.';
         }
 
         if (!isset($_POST['phone'])) {
-                $errors['phone'] = 'Please enter your phone';
+                $errors['phone'] = 'Please enter your phone.';
         }
 
         // Check if email has been entered and is valid
@@ -54,10 +54,17 @@
                 $errorOutput .= '</div>';
 
                 echo $errorOutput;
-                //alert $errorOutput;
                 die();
         }
-
+        $info = '';
+        if (isset($_POST['company'])){
+            $info .= "\tCompany:\t".$_POST['company']."\n";
+        }
+	    $info .= "\tAddress:\n\t\t".$_POST['address']."\n";
+        if (isset($_POST['address2'])){
+            $info .= "\t\t".$_POST['address2']."\n";
+        }
+        $info .= "\t\t".$_POST['city'].", ".$_POST['state']." - ".$_POST['zip']."\n\t\t".$_POST['country']."\n\tPhone: \t".$_POST['phone']."\n\tEmail: \t".$_POST['email'];
         $name = $_POST['name'];
         $email = $_POST['email'];
         $from = $email;
@@ -65,93 +72,92 @@
         $subject = 'Testing Contact Forms';
 
 
-        $message = 'I am interested in:\n';
+        $message = $info."\n\n\tI am interested in:\n";
 
-        if ($_POST['walkIns']){
-                $message .= '\t Walk Ins \n';
+        if (isset($_POST['walkIns'])){
+                $message .= "\t\tWalk Ins \n";
         }
-        if ($_POST['coolerFreezerCombo']){
-                $message .= '\t Cooler Freezer Combos \n';
+        if (isset($_POST['coolerFreezerCombo'])){
+                $message .= "\t\tCooler Freezer Combos \n";
         }
-        if ($_POST['refrigerationEquipment']){
-                $message .= '\t Refrigeration Equipment \n';
+        if (isset($_POST['refrigerationEquipment'])){
+                $message .= "\t\tRefrigeration Equipment \n";
         }
-        if ($_POST['iceMachines']){
-                $message .= '\t Ice Machines \n';
+        if (isset($_POST['iceMachines'])){
+                $message .= "\t\tIce Machines \n";
         }
-        if ($_POST['drinkDispensers']){
-                $message .= '\t Drink Dispensers \n';
+        if (isset($_POST['drinkDispensers'])){
+                $message .= "\t\tDrink Dispensers \n";
         }
-        if ($_POST['commercialCabinets']){
-                $message .= '\t Commercial Cabinets \n';
+        if (isset($_POST['commercialCabinets'])){
+                $message .= "\t\tCommercial Cabinets \n";
         }
-        if ($_POST['fountainMachines']){
-                $message .= '\t Fountain Machines \n';
+        if (isset($_POST['fountainMachines'])){
+                $message .= "\t\tFountain Machines \n";
         }
-        if ($_POST['reachIns']){
-                $message .= '\t Reach Ins \n';
+        if (isset($_POST['reachIns'])){
+                $message .= "\t\tReach Ins \n";
         }
-        if ($_POST['commercialFreezers']){
-                $message .= '\t Commercial Freezers \n';
+        if (isset($_POST['commercialFreezers'])){
+                $message .= "\t\tCommercial Freezers \n";
         }
-        if ($_POST['floralCoolers']){
-                $message .= '\t Floral Coolers \n';
+        if (isset($_POST['floralCoolers'])){
+                $message .= "\t\tFloral Coolers \n";
         }
-        if ($_POST['displayDoors']){
-                $message .= '\t Display Doors \n';
+        if (isset($_POST['displayDoors'])){
+                $message .= "\t\tDisplay Doors \n";
         }
-        if ($_POST['beerCaves']){
-                $message .= '\t Beer Caves \n';
+        if (isset($_POST['beerCaves'])){
+                $message .= "\t\tBeer Caves \n";
         }
-        if ($_POST['gondolaShelving']){
-                $message .= '\t Gondola Shelving \n';
+        if (isset($_POST['gondolaShelving'])){
+                $message .= "\t\tGondola Shelving \n";
         }
-        if ($_POST['clamshellsAndAddOnHoods']){
-                $message .= '\t Clamshells and Add On Hoods \n';
+        if (isset($_POST['clamshellsAndAddOnHoods'])){
+                $message .= "\t\tClamshells and Add On Hoods \n";
         }
-        if ($_POST['convectionOvens']){
-                $message .= '\t Convection Ovens \n';
+        if (isset($_POST['convectionOvens'])){
+                $message .= "\t\tConvection Ovens \n";
         }
-        if ($_POST['deckOvens']){
-                $message .= '\t Deck Ovens \n';
+        if (isset($_POST['deckOvens'])){
+                $message .= "\t\tDeck Ovens \n";
         }
-        if ($_POST['broilersStandardFeatures']){
-                $message .= '\t Broilers Standard Features \n';
+        if (isset($_POST['broilersStandardFeatures'])){
+                $message .= "\t\tBroilers Standard Features \n";
         }
-        if ($_POST['griddles']){
-                $message .= '\t Griddles \n';
+        if (isset($_POST['griddles'])){
+                $message .= "\t\tGriddles \n";
         }
-        if ($_POST['proofersAndHoldingCabinets']){
-                $message .= '\t Proofers and Holding Cabinets \n';
+        if (isset($_POST['proofersAndHoldingCabinets'])){
+                $message .= "\t\tProofers and Holding Cabinets \n";
         }
-        if ($_POST['paneBella']){
-                $message .= '\t Pane Bella \n';
+        if (isset($_POST['paneBella'])){
+                $message .= "\t\tPane Bella \n";
         }
-        if ($_POST['ranges']){
-                $message .= '\t Ranges \n';
+        if (isset($_POST['ranges'])){
+                $message .= "\t\tRanges \n";
         }
-        if ($_POST['salamandersStandardFeatures']){
-                $message .= '\t Salamanders Standard Features \n';
+        if (isset($_POST['salamandersStandardFeatures'])){
+                $message .= "\t\tSalamanders Standard Features \n";
         }
-        if ($_POST['fryers']){
-                $message .= '\t Fryers \n';
+        if (isset($_POST['fryers'])){
+                $message .= "\t\tFryers \n";
         }
-        if ($_POST['meltersAndFinishingOvens']){
-                $message .= '\t Melters and Finishing Ovens \n';
+        if (isset($_POST['meltersAndFinishingOvens'])){
+                $message .= "\t\tMelters and Finishing Ovens \n";
         }
-        if ($_POST['boothSeating']){
-                $message .= '\t Booth Seating \n';
+        if (isset($_POST['boothSeating'])){
+                $message .= "\t\tBooth Seating \n";
         }
 
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+        $body = "From: $name\nE-Mail: $email\nMessage:\n$message";
 
 
         //send the email
         $result = '';
         if (mail ($to, $subject, $body)) {
-                $result .= '<div class="alert alert-success alert-dismissible" role="alert">';
-                $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-                $result .= 'Thank You! I will be in touch';
+                $result .= '<div class="alert alert-success" role="alert">';
+                $result .= 'Thank You! We will be in touch';
                 $result .= '</div>';
 
                 echo $result;
@@ -159,10 +165,8 @@
         }
 
         $result = '';
-        $result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
-        $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+        $result .= '<div class="alert alert-danger" role="alert">';
         $result .= 'Something bad happened during sending this message. Please try again later';
         $result .= '</div>';
 
         echo $result;
-

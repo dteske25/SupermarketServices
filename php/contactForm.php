@@ -21,7 +21,7 @@
 
         if(!empty($errors)){
 
-                $errorOutput .= '<div class="alert alert-danger alert-dismissible" role="alert">';
+                $errorOutput .= '<div class="alert alert-danger" role="alert">';
                 $errorOutput .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 
                 $errorOutput  .= '<ul>';
@@ -52,21 +52,18 @@
         //send the email
         $result = '';
         if (mail ($to, $subject, $body)) {
-                $result .= '<div class="alert alert-success alert-dismissible" role="alert">';
-                $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+                $result .= '<div class="alert alert-success" role="alert">';
                 $result .= 'Thank You! I will be in touch';
                 $result .= '</div>';
 
-		
+
                 echo $result;
                 die();
         }
 
         $result = '';
-        $result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
-        $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+        $result .= '<div class="alert alert-danger" role="alert">';
         $result .= 'Something bad happend during sending this message. Please try again later';
         $result .= '</div>';
 
         echo $result;
-
