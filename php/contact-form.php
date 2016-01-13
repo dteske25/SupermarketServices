@@ -13,7 +13,7 @@
 	}
 
 	//Check if message has been entered
-	if (!isset($_POST['massage'])) {
+	if (!isset($_POST['message'])) {
 		$errors['message'] = 'Please enter your message';
 	}
 
@@ -41,7 +41,7 @@
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$message = $_POST['massage'];
+	$message = $_POST['message'];
 	$from = $email;
 	$to = 'dteske25@gmail.com';  // please change this email id
 	$subject = 'Testing Contact Forms';
