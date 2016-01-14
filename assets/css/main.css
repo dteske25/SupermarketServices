@@ -2329,7 +2329,13 @@ blockquote p {
     vertical-align: middle; }
     .four-o-four .four-o-four-inner h1 {
       font-weight: bold; }
-
+a.jump{
+    position: relative;
+    top: -100px;
+    display: block;
+    height: 0;
+    width:0;
+}
 
 .custom-logo{
     height: 75px;
